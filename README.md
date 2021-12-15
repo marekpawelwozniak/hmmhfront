@@ -1,2 +1,0 @@
-# hmmhfront
-projekt frontend

@@ -1,0 +1,40 @@
+@import "../globals/variables";
+
+.header{
+    height: 200px;
+    display: flex;
+    @media (max-width:576px)  {
+        height: initial;
+    }
+    &__navbar{
+        display: flex;
+        align-items: flex-end;
+        padding-left: 30px;
+        padding-bottom: 50px;
+        @media (max-width:576px)  {
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0 0 30px 0;
+
+        }
+        &__item{
+            list-style: none;
+            padding: 0 20px;
+            margin: 0 20px;
+            cursor: pointer;
+            @media (max-width:576px)  {
+                width: 100%;
+                padding: 15px;
+                margin: 0;
+            }
+
+        }
+
+    }
+
+
+}
+
+li.active{
+    background: $yellow;
+}

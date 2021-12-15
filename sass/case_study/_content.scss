@@ -1,0 +1,53 @@
+@import "../globals/variables";
+
+* {
+    font-family: 'Quicksand';
+    font-weight: bold;
+}
+
+a{
+    text-decoration: underline;
+    color: $black;
+
+}
+
+.cs-textbox__link--href{
+    color: $yellow;
+    text-decoration-thickness: 3px;
+    span{
+        color: $black;
+    }
+    &:hover{
+        color: $yellow;
+        text-decoration-thickness: 3px;
+    }
+
+}
+//
+//.cs-textbox__link--href span{
+//    color: $black;
+//}
+
+.case-studies{
+    &__container{
+        &__image{
+            width: 100%;
+        }
+    }
+}
+.cs-textbox{
+    padding-top: 50px;
+    padding-left: 8.333%;
+    &__tags{
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+    }
+    &__title{
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 22px;
+    }
+}
